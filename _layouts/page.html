@@ -13,7 +13,63 @@
         <img src="{{ page.featured-image }}" alt="">
       </span>
     {% endif %}
-    {{ content }}
+
+    {% if page.player-id %}
+    <iframe 
+      src="https://samply.app/embed/{{ page.player-id }}?color=4b4b4b"
+      width="100%"
+      frameborder="0">
+    </iframe>
+    {% endif %}
+    
+    
+    {% if page.cover-position=="right" %}
+    <section>
+      <br> 
+      <div class="row">
+        {% if page.lyrics %}
+        <div class="7u 12u$(medium)">
+          <h2>Lyrics</h2>
+          <pre><code>{{ page.lyrics}}</code></pre>
+          {{ page.lyrics }}
+        </div>
+        {% endif %}
+        {% if page.cover-image %}
+        <div class="5u$ 12u$(medium)">
+          <span class="image main">
+            <img src="{{ page.cover-image }}" alt="">
+          </span>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% else if page.cover-position=="left" %}
+    <section>
+      <br> 
+      <div class="row">
+        {% if page.cover-image %}
+        <div class="5u 12u$(medium)">
+          <span class="image main">
+            <img src="{{ page.cover-image }}" alt="">
+          </span>
+        </div>
+        {% endif %}
+        {% if page.lyrics %}
+        <div class="7u$ 12u$(medium)">
+          <h2>Lyrics</h2>
+          <pre><code>{{ page.lyrics}}</code></pre>
+          {{ page.lyrics }}
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% endif %}
+    
+    <section>
+      <div class="row">
+        {{ content }}
+      </div>
+    </section>
     {% include footer.html %}
 
 
