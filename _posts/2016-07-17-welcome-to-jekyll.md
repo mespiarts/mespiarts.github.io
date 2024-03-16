@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Welcomedddz to Jekyll! Page layout"
+title:  All My Life
 date:   2016-07-17 12:00:00 -0400
 categories: jekyll update
-excerpt: asdfa;lkjasd f;lkj sadf
+permalink: /all_my_life/
 image: /images/pic03.jpg
 cover-image: /images/pic03.jpg
 cover-position: left

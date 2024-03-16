@@ -6,24 +6,24 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Phantom
+title: MESPI
 email: mespi.arts@gmail.com
 description: The Jekyll version of the Phantom theme by HTML5 UP.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Logo settings
-logo-image-url: images/logo.svg
+logo-image-url: images/logo/logo_gray
 font-awesome-icon-logo:
 
 # Social settings
-github_username: andrewbanchich
-twitter_username: andrewbanchich
-facebook_URL: andrewbanchich
-instagram_username: andrewbanchich
-dribbble_username: andrewbanchich
-500px_username: andrewbanchich
-phone: 555-5555
+# github_username: andrewbanchich
+# twitter_username: andrewbanchich
+# facebook_URL: andrewbanchich
+# instagram_username: andrewbanchich
+# dribbble_username: andrewbanchich
+# 500px_username: andrewbanchich
+# phone: 555-5555
 
 # Build settings
 markdown: kramdown

@@ -7,7 +7,7 @@
 /* Header */
 
 	#header {
-		@include padding(5em, 0, (3em, 0, -5em, 0));
+		@include padding(5em, 0, (3em, 0, 2em, 0));
 
 		.logo {
 			display: block;
@@ -25,16 +25,36 @@
 				vertical-align: middle;
 			}
 
-			.symbol {
-				margin-right: 0.65em;
+			.symbol-others {
 
 				img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 15em;
+					height: auto;
+				}
+			}
+
+			.symbol-main {
+
+				img {
+					display: block;
+					width: 20em;
+					height: auto;
 				}
 			}
 		}
+
+		/* Media query for smaller screens */
+		@media only screen and (max-width: 768px) {
+			.logo .symbol-others img {
+				width: 10em; /* Adjust the width for smaller screens */
+			}
+
+			.logo .symbol-main img {
+				width: 15em; /* Adjust the width for smaller screens */
+			}
+		}
+
 
 		nav {
 			position: fixed;
