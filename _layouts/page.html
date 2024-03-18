@@ -31,6 +31,7 @@
         <div class="7u 12u$(medium)">
           <h2>Lyrics</h2>
           <pre><code>{{ page.lyrics}}</code></pre>
+          <pre>{{ page.lyrics}}</pre>
         </div>
         {% endif %}
         {% if page.cover-image %}
@@ -51,12 +52,22 @@
           <span class="image main">
             <img src="{{ page.cover-image }}" alt="">
           </span>
+          <ul class="actions">
+            <li>
+                <a href="{{ page.youtube-link }}" class="button special">
+                    <span class="fa-layers fa-fw">
+                        <i class="fab fa-youtube fa-lg"></i> <!-- YouTube icon -->
+                        <span class="fa-layers-text">{{ page.title }}</span>
+                    </span>
+                </a>
+            </li>
+            </ul>
         </div>
         {% endif %}
         {% if page.lyrics %}
         <div class="7u$ 12u$(medium)">
           <h2>Lyrics</h2>
-          <pre><code>{{ page.lyrics}}</code></pre>
+          <pre>{{ page.lyrics }}</pre>
         </div>
         {% endif %}
       </div>

@@ -59,14 +59,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </ol>
 <h3>Icons</h3>
 <ul class="icons">
-<!-- <li><a href="https://www.youtube.com/watch?v=g96H0rvsTmU" class="icon style1 fa-youtube"><span class="label">Twitter</span></a></li> -->
-<li><a href="https://www.youtube.com/watch?v=g96H0rvsTmU" class="icon style1 fa-youtube">    <span class="fa-layers-text fa-inverse">LAGRIMAS</span></a></li>
+<li><a href="#" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li>
 <li><a href="#" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li>
 <li><a href="#" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
 <li><a href="#" class="icon style1 fa-github"><span class="label">Github</span></a></li>
 </ul>
 <ul class="icons">
-<!-- <li><a href="#" class="icon style2 fa-youtube"><span class="label">Twitter</span></a></li> -->
+<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 <li><a href="#" class="icon style2 fa-github"><span class="label">Github</span></a></li>
@@ -77,17 +76,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <div class="row">
 <div class="6u 12u$(medium)">
 <ul class="actions">
-<li>
-    <a href="#" class="button special">
-        <span class="fa-layers fa-fw">
-            <i class="fab fa-youtube fa-lg"></i> <!-- YouTube icon -->
-            <span class="fa-layers-text">LAGRIMAS</span>
-        </span>
-    </a>
-</li>
-</ul>
-<ul class="actions">
-<!-- <li><a href="#" class="button special"><span class="fa-layers-text">LAGRIMAS</span></a></li> -->
+<li><a href="#" class="button special">Default</a></li>
 <li><a href="#" class="button">Default</a></li>
 </ul>
 <ul class="actions small">

@@ -26,6 +26,12 @@
 		<section style="justify-content: center; align-items: center;">
 			<!-- <h2>Follow</h2> -->
 			<ul class="icons" style="text-align: center;">
+				{% if site.email %}
+				<li><a href="mailto:{{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+				{% endif %}
+				{% if site.youtube_channel %}
+				<li><a href="https://youtube.com/{{ site.youtube_channel }}" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				{% endif %}
 				{% if site.twitter_username %}
 				<li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 				{% endif %}
@@ -47,15 +53,12 @@
 				{% if site.phone %}
 				<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
 				{% endif %}
-				{% if site.email %}
-				<li><a href="mailto:{{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-				{% endif %}
 			</ul>
 		</section>
 		<ul class="copyright">
 			<li>&copy; {{ site.title }}. All rights reserved</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			<li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
+			<li>Integration by: <a href="http://andrewbanchi.ch">AB</a></li>
 		</ul>
 	</div>
 </footer>
