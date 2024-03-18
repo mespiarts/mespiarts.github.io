@@ -7,12 +7,22 @@
 		<li><a href="{{ page.url | prepend: site.baseurl | remove: 'index.html' }}">{{ page.title }}</a></li>
 		{% endif %} {% endfor %}
 
-		{% for page in site.pages %}
 
-		{% if page.title %}
+			{% for p in site.pages %}
 
-		<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title | remove: "MESPI" }}</a></li>
+				{% if p.title %}
+				
+					{% if p.title != "MESPI" %}
+						<li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+					{% endif %}
 
-		{% endif %} {% endfor %}
+					{% if p.title == "MESPI" and page.url != "/" %}
+						<li><a href="{{ p.url | prepend: site.baseurl }}">HOME</a></li>
+					{% endif %}
+
+				{% endif %}
+				
+			{% endfor %}
+
 	</ul>
 </nav>
