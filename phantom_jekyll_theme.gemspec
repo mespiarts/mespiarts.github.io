@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "phantom_jekyll_theme"
+  spec.name          = "mespi_music"
   spec.version       = "1.2"
-  spec.authors       = ["Andrew Banchich"]
-  spec.email         = ["andrewbanchich@gmail.com"]
+  spec.authors       = ["MESPI"]
+  spec.email         = ["mespi.arts@gmail.com"]
 
-  spec.summary       = %q{A Jekyll version of the "Phantom" theme by HTML5 UP.}
-  spec.homepage      = "https://osjaxacobeo.github.io"
+  spec.summary       = %q{Music Portfolio | ＋Π}
+  spec.homepage      = "https://mespimusic.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
